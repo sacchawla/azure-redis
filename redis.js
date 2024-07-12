@@ -1,12 +1,5 @@
 const redis = require("redis");
 
-// Environment variables for cache
-const cacheHostName = "hamisha.redis.cache.windows.net";
-const cachePassword = "flIUzq7QbQkhVFfjw4ra85Qb4pfiavBSYAzCaJiajBo=";
-
-if(!cacheHostName) throw Error("AZURE_CACHE_FOR_REDIS_HOST_NAME is empty")
-if(!cachePassword) throw Error("AZURE_CACHE_FOR_REDIS_ACCESS_KEY is empty")
-
 async function testCache() {
 
     // Connection configuration
